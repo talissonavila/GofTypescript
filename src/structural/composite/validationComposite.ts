@@ -43,8 +43,6 @@ const validateString = new ValidateString();
 
 const valdiationComposite = new ValidationComposite();
 
-valdiationComposite.add(validateEmail);
-valdiationComposite.add(validateNumber);
-valdiationComposite.add(validateString);
+valdiationComposite.add(validateEmail, validateNumber, validateString);
 
 console.log(valdiationComposite.validate('luiz1@email.com'));
